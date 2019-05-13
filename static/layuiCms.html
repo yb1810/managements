@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layuiCms</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/layui.css">
+    <link rel="stylesheet" href="css/layuiCms.css">
+    
+</head>
+<body class="nav-md">
+    <div class="LAY_app">
+        <div class="layui-header_public">
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item layadmin-flexible">
+                    <a href="javascript:;" title="侧边伸缩" id="menu_toggle">
+                        <i class="layui-icon layui-icon-shrink-right">
+                        </i>
+                    </a>
+                </li>
+                <li class="layui-nav-item layadmin-flexible">
+                    <a href="javascript:;" title="前台">
+                        <i class="layui-icon layui-icon-website">
+                        </i>
+                    </a>
+                </li>
+                <li class="layui-nav-item layadmin-flexible">
+                    <a href="javascript:;" target="_blank" title="刷新">
+                        <i class="layui-icon layui-icon-refresh-3">
+                        </i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <i class="layui-icon layui-icon-notice"></i>
+                        <span class="layui-badge-dot"></span>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <i class="layui-icon layui-icon-theme"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <i class="layui-icon layui-icon-note"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <cite>大神</cite>
+                        <span class="layui-nav-more"></span>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a href="javascript:;">基本资料</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">安全设置</a>
+                        </dd>
+                        <hr>
+                        <dd>
+                            <a href="javascript:;" style="text-align:center">退出</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <i class="layui-icon layui-icon-more-vertical"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3 layui-side layui-side-menu">
+            <div class="left_col scroll_view">
+                <div class="navbar nav_title">
+                    <a href="index.html" class="site_title">
+                        <span>layuiCms Pro</span>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div class="menu_section active">
+                        <ul class="nav side-menu">
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-home"></i>
+                                        主页
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li class="current-page">
+                                        <a href="index.html">控制台</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-component"></i>
+                                        组件 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">图标</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">选择器</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">城市选择三级联动</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-template"></i>
+                                        组织架构 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">部门管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">人事管理</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-app"></i>
+                                        资讯系统 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">资讯管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">评论管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">专题管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">标签管理</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-picture-fine"></i>
+                                        图片管理  
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">海报管理</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-form"></i>
+                                    客户管理 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">我的客户</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-senior"></i>
+                                    意见反馈 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">评价管理</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-chart"></i>
+                                    统计分析 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">访问人数</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">销量统计</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-user"></i>
+                                    个人中心 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">个人信息</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">我的消息</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-set"></i>
+                                    其他 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">注册</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">登录</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">日志管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">系统设置</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-footer hidden-small">
+                    <a>
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </a>
+                    <a>
+                        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                    </a>
+                    <a>
+                        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                    </a>
+                    <a>
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="layui-body">
+            <div class="layui-fluid">
+                <div class="layui-col-space15">
+                    <div class="layui-col-md8">
+                        <div class="layui-col-space15">
+                            <div class="layui-col-md6">
+                                <div class="layui-card">
+                                    <div class="layui-card-header">快捷方式</div>
+                                    <div class="layui-card-body">
+                                        <div class="layui-carousel layadmin-carousel layadmin-shortcut">
+                                            <div carousel-item>
+                                                <ul class="layui-row layui-col-space10 layui-this">
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-console"></i>
+                                                            <cite>主页一</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-chart"></i>
+                                                            <cite>主页二</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-template-1"></i>
+                                                            <cite>弹层</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-chat"></i>
+                                                            <cite>聊天</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-find-fill"></i>
+                                                            <cite>进度条</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-survey"></i>
+                                                            <cite>工单</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-user"></i>
+                                                            <cite>用户</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-set"></i>
+                                                            <cite>设置</cite>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="layui-row layui-col-space10">
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-set"></i>
+                                                            <cite>我的资料</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-set"></i>
+                                                            <cite>我的资料</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-set"></i>
+                                                            <cite>我的资料</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-set"></i>
+                                                            <cite>我的资料</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-set"></i>
+                                                            <cite>我的资料</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-set"></i>
+                                                            <cite>我的资料</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-set"></i>
+                                                            <cite>我的资料</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs3">
+                                                        <a href="javascript:;">
+                                                            <i class="layui-icon layui-icon-set"></i>
+                                                            <cite>我的资料</cite>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="layui-carousel-ind layui_li">
+                                                <ul>
+                                                    <li class="layui-this"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-col-md6">
+                                <div class="layui-card">
+                                    <div class="layui-card-header">待办事项</div>
+                                    <div class="layui-card-body">
+                                        <div class="layui-carousel layadmin-carousel layadmin-backlog">
+                                            <div carousel-item>
+                                                <ul class="layui-row layui-col-space10 layui-this">
+                                                    <li class="layui-col-xs6">
+                                                        <a href="javascript:;" class="layadmin-backlog-body">
+                                                            <h3>待审评论</h3>
+                                                            <cite>66</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs6">
+                                                        <a href="javascript:;" class="layadmin-backlog-body">
+                                                            <h3>待审帖子</h3>
+                                                            <cite>12</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs6">
+                                                        <a href="javascript:;" class="layadmin-backlog-body">
+                                                            <h3>待审商品</h3>
+                                                            <cite>99</cite>
+                                                        </a>
+                                                    </li>
+                                                    <li class="layui-col-xs6">
+                                                        <a href="javascript:;" class="layadmin-backlog-body">
+                                                            <h3>代发货</h3>
+                                                            <cite>20</cite>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="layui-row layui-col-space10">
+                                                    <li class="layui-col-xs6">
+                                                        <a href="javascript:;" class="layadmin-backlog-body">
+                                                            <h3>待审友情链接</h3>
+                                                            <cite>5</cite>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="layui-carousel-ind layui_li">
+                                                <ul>
+                                                    <li class="layui-this"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-col-md12">
+                                <div class="layui-card">
+                                    <div class="layui-card-header">数据概览</div>
+                                    <div class="layui-card-body">
+                                        <div class="layui-carousel layadmin-carousel layadmin-dataview">
+                                            <div id="main" class="demo-placeholder">
+									
+                                            </div>
+                                            <div id="pieChart" class="demo-placeholder" style="height: 330px;top:-100%">
+									
+                                            </div>
+                                            <div id="barGraph" class="demo-placeholder" style="height: 330px;top:-200%">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="layui-carousel-ind layui-chart_li">
+                                            <li></li>
+                                            <li></li>
+                                            <li class="layui-this"></li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="layui-card" style="height:300px">
+                            <div class="layui-card-header">版本信息</div>
+                            <div class="layui-card-body layui-text">
+                                <table class="layui-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>当前版本</td>
+                                            <td>
+                                                v1.0.0-beta6 
+                                                <a href="javascript:;" style="padding-left: 15px;">更新日志</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>基于框架</td>
+                                            <td>
+                                                layui-v2.2.6-rc2  
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>主要特色</td>
+                                            <td>
+                                                单页面 / 响应式 / 清爽 / 极简  
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>获取渠道</td>
+                                            <td style="padding-bottom: 0;">
+                                                <div class="layui-btn-container">
+                                                    <a href="javascript:;" class="layui-btn layui-btn-danger">获取授权</a>
+                                                    <a href="javascript:;" class="layui-btn">立即下载</a>
+                                                </div> 
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="layui-card" style="height:180px">
+                            <div class="layui-card-header">效果报告</div>
+                            <div class="layui-card-body layadmin-takerates">
+                                <div class="layui-progress">
+                                    <h3>
+                                        转化率（日同比 28% 
+                                        <span class="layui-edge layui-edge-top"></span>
+                                        ）
+                                    </h3>
+                                    <div class="layui-progress-bar" style="width: 65%;">
+                                    <span class="layui-progress-text layui-effect-one" style="left:-146px">65%</span></div>
+                                </div>
+                                <div class="layui-progress">
+                                    <h3>
+                                        签到率（日同比 11% 
+                                        <span class="layui-edge layui-edge-bottom"></span>
+                                        ）
+                                    </h3>
+                                    <div class="layui-progress-bar" style="width: 32%;">
+                                    <span class="layui-progress-text layui-effect-two">32%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-card" style="height:180px">
+                            <div class="layui-card-header">实时监控</div>
+                            <div class="layui-card-body layadmin-takerates">
+                                <div class="layui-progress">
+                                    <h3>
+                                       CPU使用率
+                                        <span class="layui-edge layui-edge-top"></span>
+                                    </h3>
+                                    <div class="layui-progress-bar" style="width: 58%;">
+                                    <span class="layui-progress-text layui-watch-one" style="left:-127px">58%</span></div>
+                                </div>
+                                <div class="layui-progress">
+                                    <h3>
+                                        内存占用率
+                                        <span class="layui-edge layui-edge-bottom"></span>
+                                    </h3>
+                                    <div class="layui-progress-bar" style="width: 90%;">
+                                    <span class="layui-progress-text layui-watch-two" style="left:-212px">90%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="layui-layer4" class="layui-layer layui-layer-page layui-anim layui-anim-rl layui-layer-adminRight" style="width: 300px;left: 100%;z-index:999">
+        <div class="layui-layer-content">
+            <div class="layui-card-body layadmin-setTheme">
+                <ul class="layadmin-setTheme-color">
+                    <li class="layui-this" title="default">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #20222A;">
+                            <div class="layadmin-setTheme-logo style="background-color: undefined;"></div>
+                        </div>
+                    </li>
+                    <li title="dark-blue">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #03152A;">
+                            <div class="layadmin-setTheme-logo style="background-color: undefined;"></div>
+                        </div>
+                    </li>
+                    <li title="coffee">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #2E241B;">
+                            <div class="layadmin-setTheme-logo" style="background-color: undefined;"></div>
+                        </div>
+                    </li>
+                    <li title="purple-red">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #50314F;">
+                            <div class="layadmin-setTheme-logo" style="background-color: undefined;"></div>
+                        </div>
+                    </li>
+                    <li title="ocean">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #344058;">
+                            <div class="layadmin-setTheme-logo" style="background-color: #1E9FFF;"></div>
+                        </div>
+                    </li>
+                    <li title="green">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #3A3D49;">
+                            <div class="layadmin-setTheme-logo" style="background-color: #2F9688;"></div>
+                        </div>
+                    </li>
+                    <li title="red">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #20222A;">
+                            <div class="layadmin-setTheme-logo" style="background-color: #F78400;"></div>
+                        </div>
+                    </li>
+                    <li title="fashion-red">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #28333E;">
+                            <div class="layadmin-setTheme-logo" style="background-color: #AA3130;"></div>
+                        </div>
+                    </li>
+                    <li title="classic-black">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #24262F;">
+                            <div class="layadmin-setTheme-logo" style="background-color: #3A3D49;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="layui-layer5" class="layui-layer layui-layer-page layui-layer-admin layadmin-note layui-anim layui-anim-upbit" style="z-index: 999; top: 58px; right:20px;display: none;">
+        <div class="layui-layer-title" style="cursor: move">便签</div>
+        <div class="layui-layer-content">
+            <textarea>  便签中的内容会存储在本地，这样即便你关掉了浏览器，在下次打开时，依然会读取到上一次的记录。是个非常小巧实用的本地备忘录</textarea>
+        </div>
+        <i class="layui-icon" close>×</i>
+    </div>
+    <div id="layui-layer6" class="layui-layer layui-layer-page layui-anim layui-anim-rl layui-layer-adminRight" style="z-index: 999; width: 300px; top: 58px; left:100%;">
+        <div class="layui-layer-content">
+            <div class="layui-card-header">版本信息</div>
+            <div class="layui-card-body layui-text layadmin-about">
+                <p>当前版本：layuiAdmin-v1.0.0-beta6</p>
+                <p>基于框架：layui-v2.2.6-rc2</p>
+                <div class="layui-btn-container">
+                    <a href="javascript:;" class="layui-btn layui-btn-danger">获取授权</a>
+                    <a href="javascript:;" class="layui-btn">下载新版</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript" src="js/layuiCms.js"></script>
+<!-- <script type="text/javascript" src="js/echarts.js"></script> -->

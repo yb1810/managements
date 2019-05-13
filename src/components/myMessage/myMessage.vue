@@ -1,0 +1,195 @@
+<template>
+	<div class="layui-fluid">
+		<div class="layui-con">
+			<div class="layui-card-bodys">
+				<ul>
+					<li class="l lis"><a href="#">全部消息</a><b></b></li>
+					<li class="l"><a href="#">通知</a><i>6</i></li>
+					<li class="l"><a href="">私信</a></li>
+				</ul>
+			</div>
+			<div class="layui-card-content">
+				<div class="layui-card-top">
+					<button type="button">删除</button>
+					<button type="button">标记已读</button>
+					<button type="button">全部已读</button>
+				</div>
+				<table id="list" border="1" cellspacing="0" cellpadding="0">
+					<tr align="center" height="37" style="background: #f2f2f2;">
+						<th width="48">
+							<input id="checkedAllId" type="checkbox" name="" value="" />
+						</th>
+						<td width="1006">标题内容</td>
+						<td width="170">时间</td>
+					</tr>
+					<tr align="center" height="37">
+						<th width="48">
+							<input type="checkbox" name="" value="" />
+						</th>
+						<td width="1006">大神发来了一段私信</td>
+						<td width="170">2017-11-11 09:30:00</td>
+					</tr>
+					<tr align="center" height="37">
+						<th width="48">
+							<input type="checkbox" name="" value="" />
+						</th>
+						<td width="1006">大神发来了一段私信</td>
+						<td width="170">2017-11-09 15:26:10</td>
+					</tr>
+					<tr align="center" height="37">
+						<th width="48">
+							<input type="checkbox" name="" value="" />
+						</th>
+						<td width="1006">大神发来了一段私信</td>
+						<td width="170">2017-11-09 15:26:10</td>
+					</tr>
+					<tr align="center" height="37">
+						<th width="48">
+							<input type="checkbox" name="" value="" />
+						</th>
+						<td width="1006">大神发来了一段私信</td>
+						<td width="170">2017-11-09 15:26:10</td>
+					</tr>
+					<tr align="center" height="37">
+						<th width="48">
+							<input type="checkbox" name="" value="" />
+						</th>
+						<td width="1006">大神发来了一段私信</td>
+						<td width="170">2017-11-09 15:26:10</td>
+					</tr>
+					<tr align="center" height="37">
+						<th width="48">
+							<input type="checkbox" name="" value="" />
+						</th>
+						<td width="1006">大神发来了一段私信</td>
+						<td width="170">2017-11-09 15:26:10</td>
+					</tr>
+					<tr align="center" height="37">
+						<th width="48">
+							<input type="checkbox" name="" value="" />
+						</th>
+						<td width="1006">大神发来了一段私信</td>
+						<td width="170">2017-11-09 15:26:10</td>
+					</tr>
+					<tr align="center" height="37">
+						<th width="48">
+							<input type="checkbox" name="" value="" />
+						</th>
+						<td width="1006">大神发来了一段私信</td>
+						<td width="170">2017-11-09 15:26:10</td>
+					</tr>
+					<tr align="center" height="37">
+						<th width="48">
+							<input type="checkbox" name="" value="" />
+						</th>
+						<td width="1006">大神发来了一段私信</td>
+						<td width="170">2017-11-09 15:26:10</td>
+					</tr>
+					<tr align="center" height="37">
+						<th width="48">
+							<input type="checkbox" name="" value="" />
+						</th>
+						<td width="1006">大神发来了一段私信</td>
+						<td width="170">2017-11-09 15:26:10</td>
+					</tr>
+				</table>
+				<div class="layui-table-page">
+					<div id="layui-table-page6">
+						<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-30">
+							<a href="javascript:;" class="layui-laypage-prev layui-disabled" data-page="0">
+								<i class="layui-icon">&lt;</i>
+							</a>
+							<span class="layui-laypage-curr">
+								<em class="layui-laypage-em"></em>
+								<em>1</em>
+							</span>
+							<a href="javascript:;" data-page="2">2</a>
+							<a href="javascript:;" data-page="3">3</a>
+							<span class="layui-laypage-spr">…</span>
+							<a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="6">6</a>
+							<a href="javascript:;" class="layui-laypage-next" data-page="2">
+								<i class="layui-icon">&gt;</i>
+							</a>
+							<span class="layui-laypage-skip">
+								到第
+								<input type="text" min="1" value="1" class="layui-input">
+								页
+								<button type="button" class="layui-laypage-btn">确定</button>
+							</span>
+							<span class="layui-laypage-count">共 60 条</span>
+							<span class="layui-laypage-limits">
+								<select lay-ignore="">
+									<option value="10" selected="">10 条/页</option>
+									<option value="20">20 条/页</option>
+									<option value="30">30 条/页</option>
+									<option value="40">40 条/页</option>
+									<option value="50">50 条/页</option>
+									<option value="60">60 条/页</option>
+									<option value="70">70 条/页</option>
+									<option value="80">80 条/页</option>
+									<option value="90">90 条/页</option>
+								</select>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+</template>
+
+<script>
+	export default{
+		mounted(){
+			jQuery.fn.extend({    
+				bindCheck:function($subCheckbox,$unCheckBtn){
+					let $fatherCheckBox = this;
+					//1、全选//this是bindCheck的所属对象
+					this.click(function(){
+						let isCheck = this.checked;//this事件源
+						$subCheckbox.each(function(){
+							this.checked = isCheck;
+						});
+					});
+					//2、反选
+					if($unCheckBtn){
+						$unCheckBtn.click(function(){
+							$subCheckbox.each(function(){
+								this.checked = !this.checked;
+							});
+							changeFatherCheckbox();
+						});
+					}
+
+					//3、关联（子控制父）
+					$subCheckbox.click(function(){
+						changeFatherCheckbox();
+					});
+
+					//控制父复选框的状态
+					function changeFatherCheckbox(){
+						let isAllCheck = true;//假定全部子复选框是选中状态
+						
+						$subCheckbox.each(function(){
+							if(!this.checked){
+								isAllCheck = false;
+							}
+						});
+						$fatherCheckBox.attr("checked",isAllCheck);
+					}
+				}
+			});
+
+			//主函数
+			$(function(){
+				//父复选框.bindCheck(所有的子复选框，反选按钮);
+			   $("#checkedAllId").bindCheck($("#list :checkbox"),$("#btnUnCheckId"));
+				// $("#checkedAllId").bindCheck($("#list :checkbox"));
+			});
+		}
+	}
+</script>
+
+<style scoped>
+	@import url(../../assets/css/myMessage);
+</style>

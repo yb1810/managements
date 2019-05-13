@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body,
+p,
+dl,
+dd,
+ul,
+ol,
+li,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+table,
+tr,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "微软雅黑", Arial;
+    font-size: 14px;
+    background-color: #f2f2f2!important;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+
+/*Other-content---------------*/
+
+.Other-content {
+    background: #f2f2f2;
+    position: relative;
+}
+
+
+/*Other-login,Other-register---------------------------------*/
+
+.Other-login,
+.Other-register {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.login-user,
+.register-user {
+    width: 375px;
+    margin: 0 auto;
+}
+
+.login-user-head,
+.register-user-head {
+    text-align: center;
+    padding: 20px;
+}
+
+.login-user-head h2,
+.register-user-head h2 {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000;
+}
+
+.login-user-head p,
+.register-user-head p {
+    font-weight: 300;
+    color: #999;
+}
+
+.login-user-body,
+.register-user-body {
+    padding: 20px;
+}
+
+.layui-form-item {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.login-user-icon,
+.register-user-icon {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 38px;
+    line-height: 36px;
+    text-align: center;
+    color: #d2d2d2;
+}
+
+.layui-form-item input {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    border-radius: 2px;
+    display: block;
+    padding-left: 38px;
+    box-sizing: border-box;
+}
+
+.login-form-checkbox,
+.register-form-checkbox {
+    float: left;
+}
+
+.login-form-checkbox span,
+.register-form-checkbox span {
+    padding: 0 10px;
+    font-size: 14px;
+    color: #666;
+    float: right;
+    margin-top: 2px;
+}
+
+.login-form-checkbox .login-user-checkbox,
+.register-form-checkbox .register-user-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d2d2d2;
+    border-radius: 2px;
+    background-color: #fff;
+    float: left;
+}
+
+.login-user-checkbox:hover {
+    border-color: #5FB878;
+}
+
+.login-user-jump {
+    display: block;
+    float: right;
+    color: #029789;
+}
+
+.login-user-btn,
+.register-user-btn {
+    width: 100%;
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18px;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+}
+
+.login-user-other,
+.register-user-other {
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-user-other span,
+.login-user-other .layui-icon,
+.register-user-other span,
+.register-user-other .layui-icon {
+    margin-right: 10px;
+    float: left;
+}
+
+.login-user-other .goRegister,
+.register-user-other .goLogin {
+    float: right;
+    margin-right: 10px;
+    color: #029789;
+}
+
+.login-user-foot,
+.register-user-foot {
+    width: 100%;
+    padding: 20px;
+    color: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0;
+}
+
+.login-user-foot a,
+.register-user-foot a {
+    padding: 0 5px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.register-btn-fluid {
+    height: 38px;
+    border: 1px solid #c9c9c9;
+    background: #fff;
+    color: #555;
+    padding: 0 25px;
+    line-height: 38px;
+}
+
+
+/*Other-daily---------------------------------*/
+
+.Other-daily {
+    background: #f2f2f2;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.layui-card {
+    padding: 15px;
+}
+
+
+/*Other-SystemSetup---------------------------------*/
+
+.Other-SystemSetup {
+    background: #f2f2f2;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.layui-card {
+    padding: 15px;
+}
+
+.layui-form-label {
+    width: 100px!important;
+}
+
+.laytable-cell-1-0 {
+    width: 48px;
+}
+
+.laytable-cell-1-id {
+    width: 180px;
+}
+
+.laytable-cell-1-username {
+    width: 180px;
+}
+
+.laytable-cell-1-department {
+    width: 180px;
+}
+
+.laytable-cell-1-operation {
+    width: 180px;
+}
+
+.laytable-cell-1-time {
+    width: 180px;
+}
+
+.laytable-cell-1-remark {
+    width: 180px;
+}

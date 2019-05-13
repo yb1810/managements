@@ -1,0 +1,127 @@
+@charset "utf-8";
+.LAY_app .layui-body{
+    left:220px;
+    top:58px;
+}
+.layui-fluid{
+    padding:15px;
+}
+.layui-card{
+    padding:15px !important;
+}
+.layui-card-header{
+    position: relative;
+}
+.layadmin-carousel{
+    position: relative;
+
+    width: 100%;
+    height: 330px;
+    background: #fff;
+}
+.layadmin-carousel .layui-col-space10{
+    margin:0;
+}
+.layadmin-shortcut li{
+    text-align: center;
+}
+.layadmin-shortcut li cite{
+    position: relative;
+    top: 2px;
+    display: block;
+    color: #666;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.layadmin-carousel .layui-carousel-ind{
+    position: absolute;
+    top: -41px;
+    text-align: right;
+}
+.layui-col-space10 li{
+    margin-top:20px;
+}
+.layadmin-backlog .layadmin-backlog-body{
+    display: block;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    color: #999;
+    border-radius: 2px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+.layadmin-backlog-body h3{
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.layadmin-backlog-body cite{
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 300;
+    color: #009688;
+}
+.layui-carousel-ind ul{
+    background: transparent !important;
+}
+.layui-carousel-ind li{
+    background: #e2e2e2;
+}
+.layui-carousel-ind li.layui-this{
+    background: #999 !important;
+}
+.layui-col-space10 .layui-col-xs6{
+    margin-top:10px;
+}
+.demo-placeholder{
+	padding:0;
+	position: relative;
+	height: 330px;
+}
+.layui-card-body{
+    height: 330px!important;
+}
+.layui-col-md6{
+    height: 270px;
+}
+.layui-col-md12 .layui-carousel-ind{
+    top:0px;
+}
+.layui-btn{
+    padding:0 10px;
+    margin-right: 2px!important;
+}
+.layadmin-takerates{
+    padding-top:5px;
+}
+.layadmin-takerates .layui-progress{
+    margin:25px 0 30px;
+}
+.layadmin-takerates .layui-progress h3{
+    position: absolute;
+    top:-18px;
+    right:-8px;
+    color: #999;
+    font-size: 14px;
+}
+.layui-progress-text{
+    left:-58px;
+    font-size: 14px;
+}
+@media screen and (max-width: 992px){
+	.layui-body{
+	    left: 0!important;
+	}
+}
+@media screen and (max-width: 1085px){
+	.layui-col-md4{
+	    width: 100%!important;
+    }
+    .layui-col-md12{
+        width: 100%!important;
+    }
+    .layui-col-md8{
+        width: 100%!important;
+    }
+}

@@ -1,0 +1,255 @@
+<template>
+	<div class="layui-fluid">
+			<div class="layui-con">
+				<p>列宽自动分配</p>
+				<div class="layui-card-body">
+					<div class="layui-form layui-border-box layui-table-view">
+						<div class="layui-table-box">
+							<div class="layui-table-header">
+								<table class="layui-table" border="0" cellspacing="0" cellpadding="0">
+									<thead>
+										<tr>
+											<th>
+												<div class="layui-table-cell laytable-cell-1-id">
+													<span>ID</span>
+													<span class="layui-table-sort layui-inline">
+														<i class="layui-edge layui-table-sort-asc"></i>
+														<i class="layui-edge layui-table-sort-desc"></i>
+													</span>
+												</div>
+											</th>
+											<th>
+												<div class="layui-table-cell laytable-cell-1-channel">
+													<span>渠道</span>
+												</div>
+											</th>
+											<th>
+												<div class="layui-table-cell laytable-cell-1-ip">
+													<span>IP</span>
+													<span class="layui-table-sort layui-inline">
+														<i class="layui-edge layui-table-sort-asc"></i>
+														<i class="layui-edge layui-table-sort-desc"></i>
+													</span>
+												</div>
+											</th>
+											<th>
+												<div class="layui-table-cell laytable-cell-1-uv">
+													<span>用户浏览量(UV)</span>
+													<span class="layui-table-sort layui-inline">
+														<i class="layui-edge layui-table-sort-asc"></i>
+														<i class="layui-edge layui-table-sort-desc"></i>
+													</span>
+												</div>
+											</th>
+											<th>
+												<div class="layui-table-cell laytable-cell-1-pv">
+													<span>页面浏览量(PV)</span>
+													<span class="layui-table-sort layui-inline">
+														<i class="layui-edge layui-table-sort-asc"></i>
+														<i class="layui-edge layui-table-sort-desc"></i>
+													</span>
+												</div>
+											</th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+							<div class="layui-table-body layui-table-main">
+								<table class="layui-table" border="0" cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-id">10000</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-channel">渠道-0</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-ip">255</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-uv">57</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-pv">82830700</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-id">10001</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-channel">渠道-1</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-ip">255</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-uv">57</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-pv">82830700</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-id">10002</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-channel">渠道-2</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-ip">255</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-uv">57</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-pv">82830700</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-id">10003</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-channel">渠道-3</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-ip">255</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-uv">57</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-pv">82830700</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-id">10004</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-channel">渠道-4</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-ip">255</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-uv">57</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-pv">82830700</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-id">10005</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-channel">渠道-5</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-ip">255</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-uv">57</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-pv">82830700</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-id">10006</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-channel">渠道-6</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-ip">255</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-uv">57</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-pv">82830700</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-id">10007</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-channel">渠道-7</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-ip">255</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-uv">57</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-pv">82830700</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-id">10008</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-channel">渠道-8</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-ip">255</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-uv">57</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-pv">82830700</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-id">10009</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-channel">渠道-9</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-ip">255</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-uv">57</div>
+											</td>
+											<td>
+												<div class="layui-table-cell laytable-cell-1-pv">82830700</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div style="margin-top: 20px;">
+						<span style="margin-right: 20px;">
+							<b>统计:</b>
+						</span>
+						<span style="margin-right: 10px;">IP: 23500</span>
+						<span style="margin-right: 10px;">用户浏览量(UV): 978</span>
+						<span style="margin-right: 10px;">页面浏览量(PV): 345634545</span>
+					</div>
+				</div>
+			</div>
+		
+	
+	</div>
+</template>
+
+<script>
+</script>
+
+<style scoped>
+	@import url(../../assets/css/visitorNum);
+</style>

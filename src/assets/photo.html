@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layuiCms</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/layui.css">
+    <link rel="stylesheet" href="css/photo.css">
+    
+</head>
+<body class="nav-md">
+    <div class="LAY_app">
+        <div class="layui-header_public">
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item layadmin-flexible munu">
+                    <a href="javascript:;" title="侧边伸缩" id="menu_toggle">
+                        <i class="layui-icon layui-icon-shrink-right">
+                        </i>
+                    </a>
+                </li>
+                <li class="layui-nav-item layadmin-flexible">
+                    <a href="javascript:;" title="前台">
+                        <i class="layui-icon layui-icon-website">
+                        </i>
+                    </a>
+                </li>
+                <li class="layui-nav-item layadmin-flexible">
+                    <a href="javascript:;" target="_blank" title="刷新">
+                        <i class="layui-icon layui-icon-refresh-3">
+                        </i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <i class="layui-icon layui-icon-notice"></i>
+                        <span class="layui-badge-dot"></span>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <i class="layui-icon layui-icon-theme"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <i class="layui-icon layui-icon-note"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <cite>大神</cite>
+                        <span class="layui-nav-more"></span>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a href="javascript:;">基本资料</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">安全设置</a>
+                        </dd>
+                        <hr>
+                        <dd>
+                            <a href="javascript:;" style="text-align:center">退出</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <i class="layui-icon layui-icon-more-vertical"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3 layui-side layui-side-menu">
+            <div class="left_col scroll_view">
+                <div class="navbar nav_title">
+                    <a href="index.html" class="site_title">
+                        <span>layuiCms Pro</span>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div class="menu_section active">
+                        <ul class="nav side-menu">
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-home"></i>
+                                        主页
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li class="current-page">
+                                        <a href="index.html">控制台</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-component"></i>
+                                        组件 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">图标</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">选择器</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">城市选择三级联动</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-template"></i>
+                                        组织架构 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">部门管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">人事管理</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-app"></i>
+                                        资讯系统 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">资讯管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">评论管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">专题管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">标签管理</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-picture-fine"></i>
+                                        图片管理  
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">海报管理</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-form"></i>
+                                    客户管理 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">我的客户</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-senior"></i>
+                                    意见反馈 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">评价管理</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-chart"></i>
+                                    统计分析 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">访问人数</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">销量统计</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-user"></i>
+                                    个人中心 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">个人信息</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">我的消息</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="layui-icon layui-icon-set"></i>
+                                    其他 
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu">
+                                    <li>
+                                        <a href="javascript:;">注册</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">登录</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">日志管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">系统设置</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-footer hidden-small">
+                    <a>
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </a>
+                    <a>
+                        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                    </a>
+                    <a>
+                        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                    </a>
+                    <a>
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 content">
+            <div class="bigbox">
+                <!-- photo_header -->
+                <div class="photo_header">
+                    <div class="message">
+                        <div class="tabl">
+                            <span>名称</span>
+                            <div class="table_box">
+                                <div class="kuang">
+                                    <input type="text" placeholder="请输入海报名称">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabl">
+                            <span>创建时间</span>
+                            <div class="table_box">
+                                <div class="kuang">
+                                    <input type="text" placeholder=" 请选择创建时间">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabl">
+                            <span>启用时间</span>
+                            <div class="table_box">
+                                <div class="kuang">   
+                                    <input type="text" placeholder=" 请选择启用时间">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabl">
+                            <span>平台</span>
+                            <div class="table_box">
+                                <div class="kuang">
+                                    <input class="selec" type="text" placeholder=" 请选择">
+                                    <i class="layui-icon layui-icon-triangle-d"></i>     
+                                </div>
+                                <dl>
+                                    <dd class="xuan">请选择</dd>
+                                    <dd>智汇魔方</dd>
+                                    <dd>汇贷客</dd>
+                                    <dd>公众号</dd>
+                                    <dd>web</dd>
+                                    <dd>pc</dd>
+                                    <dd>微信</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="tabl">
+                            <span>类型</span>
+                            <div class="table_box">
+                                <div class="kuang">
+                                    <input class="selec" type="text" placeholder=" 请选择">
+                                    <i class="layui-icon layui-icon-triangle-d"></i>     
+                                </div>
+                                <dl>
+                                    <dd class="xuan">请选择</dd>
+                                    <dd>普通海报</dd>
+                                    <dd>热门</dd>
+                                    <dd>推荐</dd>
+                                    <dd>海报</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="tabl">
+                            <span>标签</span>
+                            <div class="table_box">
+                                <div class="kuang">
+                                    <input class="selec" type="text" placeholder=" 请选择">
+                                    <i class="layui-icon layui-icon-triangle-d"></i>     
+                                </div>
+                                <dl>
+                                    <dd class="xuan">请选择</dd>
+                                    <dd>喜庆</dd>
+                                    <dd>节气</dd>
+                                    <dd>英雄</dd>
+                                    <dd>青春</dd>
+                                    <dd>魅力</dd>
+                                    <dd>问候</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="tabl">
+                            <button>
+                                <i class="layui-icon layui-icon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- photo_body -->
+                <div class="photo_body">
+                    <div class="butt">
+                        <button>
+                            <i class="layui-icon layui-icon-delete"></i>删除
+                        </button>
+                        <button>
+                            <i class="layui-icon layui-icon-add-1"></i>添加
+                        </button>
+                    </div>
+                    <div class="haibao">
+                        <table cellspacing="0">
+                            <tr class="first">
+                                <th>
+                                    <input type="checkbox" class="check" id="allCheck">
+                                </th>
+                                <th>名称</th>
+                                <th>缩略图</th>
+                                <th>平台</th>
+                                <th>类型</th>
+                                <th>标签</th>
+                                <th class="hot">热度
+                                    <div>
+                                        <i class="layui-icon layui-icon-triangle-r iconup"></i>
+                                        <i class="layui-icon layui-icon-triangle-d icondown"></i>
+                                    </div>
+                                </th>
+                                <th>创建时间</th>
+                                <th>启用时间</th>
+                                <th>是否启用</th>
+                                <th>操作</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="check">
+                                </td>
+                                <td>泡妞许可证</td>
+                                <td>
+                                    <img src="img/f.jpg" />
+                                </td>
+                                <td>pc</td>
+                                <td>普通海报</td>
+                                <td>魅力</td>
+                                <td>222</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="yes">
+                                    <input type="checkbox">
+                                    <div>
+                                        <em>是</em>
+                                        <i></i>
+                                    </div>
+                                </td>
+                                <td class="anniu">
+                                    <button>查看</button>
+                                    <button>编辑</button>
+                                    <button>删除</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="check">
+                                </td>
+                                <td>泡妞许可证</td>
+                                <td>
+                                    <img src="img/f.jpg" />
+                                </td>
+                                <td>pc</td>
+                                <td>普通海报</td>
+                                <td>魅力</td>
+                                <td>222</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="yes">
+                                    <input type="checkbox" class="check">
+                                    <div>
+                                        <em>是</em>
+                                        <i></i>
+                                    </div>
+                                </td>
+                                <td class="anniu">
+                                    <button>查看</button>
+                                    <button>编辑</button>
+                                    <button>删除</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="check">
+                                </td>
+                                <td>泡妞许可证</td>
+                                <td>
+                                    <img src="img/f.jpg" />
+                                </td>
+                                <td>pc</td>
+                                <td>普通海报</td>
+                                <td>魅力</td>
+                                <td>222</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="yes">
+                                    <input type="checkbox">
+                                    <div>
+                                        <em>是</em>
+                                        <i></i>
+                                    </div>
+                                </td>
+                                <td class="anniu">
+                                    <button>查看</button>
+                                    <button>编辑</button>
+                                    <button>删除</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="check">
+                                </td>
+                                <td>泡妞许可证</td>
+                                <td>
+                                    <img src="img/f.jpg" />
+                                </td>
+                                <td>pc</td>
+                                <td>普通海报</td>
+                                <td>魅力</td>
+                                <td>222</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="yes">
+                                    <input type="checkbox">
+                                    <div>
+                                        <em>是</em>
+                                        <i></i>
+                                    </div>
+                                </td>
+                                <td class="anniu">
+                                    <button>查看</button>
+                                    <button>编辑</button>
+                                    <button>删除</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="check">
+                                </td>
+                                <td>泡妞许可证</td>
+                                <td>
+                                    <img src="img/f.jpg" />
+                                </td>
+                                <td>pc</td>
+                                <td>普通海报</td>
+                                <td>魅力</td>
+                                <td>222</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="yes">
+                                    <input type="checkbox">
+                                    <div>
+                                        <em>是</em>
+                                        <i></i>
+                                    </div>
+                                </td>
+                                <td class="anniu">
+                                    <button>查看</button>
+                                    <button>编辑</button>
+                                    <button>删除</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="check">
+                                </td>
+                                <td>泡妞许可证</td>
+                                <td>
+                                    <img src="img/f.jpg" />
+                                </td>
+                                <td>pc</td>
+                                <td>普通海报</td>
+                                <td>魅力</td>
+                                <td>222</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="yes">
+                                    <input type="checkbox">
+                                    <div>
+                                        <em>是</em>
+                                        <i></i>
+                                    </div>
+                                </td>
+                                <td class="anniu">
+                                    <button>查看</button>
+                                    <button>编辑</button>
+                                    <button>删除</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="check">
+                                </td>
+                                <td>泡妞许可证</td>
+                                <td>
+                                    <img src="img/f.jpg" />
+                                </td>
+                                <td>pc</td>
+                                <td>普通海报</td>
+                                <td>魅力</td>
+                                <td>222</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="cells">2017-11-11</td>
+                                <td class="yes">
+                                    <input type="checkbox">
+                                    <div>
+                                        <em>是</em>
+                                        <i></i>
+                                    </div>
+                                </td>
+                                <td class="anniu">
+                                    <button>查看</button>
+                                    <button>编辑</button>
+                                    <button>删除</button>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="layui-table-page"><div id="layui-table-page6"><div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-30"><a href="javascript:;" class="layui-laypage-prev layui-disabled" data-page="0"><i class="layui-icon"></i></a><span class="layui-laypage-curr"><em class="layui-laypage-em"></em><em>1</em></span><a href="javascript:;" data-page="2">2</a><a href="javascript:;" data-page="3">3</a><span class="layui-laypage-spr">…</span><a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="6">6</a><a href="javascript:;" class="layui-laypage-next" data-page="2"><i class="layui-icon"></i></a><span class="layui-laypage-skip">到第<input type="text" min="1" value="1" class="layui-input">页<button type="button" class="layui-laypage-btn">确定</button></span><span class="layui-laypage-count">共 60 条</span><span class="layui-laypage-limits"><select lay-ignore=""><option value="10" selected="">10 条/页</option><option value="20">20 条/页</option><option value="30">30 条/页</option><option value="40">40 条/页</option><option value="50">50 条/页</option><option value="60">60 条/页</option><option value="70">70 条/页</option><option value="80">80 条/页</option><option value="90">90 条/页</option></select></span></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="layui-layer4" class="layui-layer layui-layer-page layui-anim layui-anim-rl layui-layer-adminRight" style="width: 300px;left: 100%;z-index:999">
+        <div class="layui-layer-content">
+            <div class="layui-card-body layadmin-setTheme">
+                <ul class="layadmin-setTheme-color">
+                    <li class="layui-this" title="default">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #20222A;">
+                            <div class="layadmin-setTheme-logo style="background-color: undefined;"></div>
+                        </div>
+                    </li>
+                    <li title="dark-blue">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #03152A;">
+                            <div class="layadmin-setTheme-logo style="background-color: undefined;"></div>
+                        </div>
+                    </li>
+                    <li title="coffee">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #2E241B;">
+                            <div class="layadmin-setTheme-logo" style="background-color: undefined;"></div>
+                        </div>
+                    </li>
+                    <li title="purple-red">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #50314F;">
+                            <div class="layadmin-setTheme-logo" style="background-color: undefined;"></div>
+                        </div>
+                    </li>
+                    <li title="ocean">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #344058;">
+                            <div class="layadmin-setTheme-logo" style="background-color: #1E9FFF;"></div>
+                        </div>
+                    </li>
+                    <li title="green">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #3A3D49;">
+                            <div class="layadmin-setTheme-logo" style="background-color: #2F9688;"></div>
+                        </div>
+                    </li>
+                    <li title="red">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #20222A;">
+                            <div class="layadmin-setTheme-logo" style="background-color: #F78400;"></div>
+                        </div>
+                    </li>
+                    <li title="fashion-red">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #28333E;">
+                            <div class="layadmin-setTheme-logo" style="background-color: #AA3130;"></div>
+                        </div>
+                    </li>
+                    <li title="classic-black">
+                        <div class="layadmin-setTheme-header"></div>
+                        <div class="layadmin-setTheme-side" style="background-color: #24262F;">
+                            <div class="layadmin-setTheme-logo" style="background-color: #3A3D49;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="layui-layer5" class="layui-layer layui-layer-page layui-layer-admin layadmin-note layui-anim layui-anim-upbit" style="z-index: 999; top: 58px; left: 73.125%;display: none;">
+        <div class="layui-layer-title" style="cursor: move">便签</div>
+        <div class="layui-layer-content">
+            <textarea>  便签中的内容会存储在本地，这样即便你关掉了浏览器，在下次打开时，依然会读取到上一次的记录。是个非常小巧实用的本地备忘录</textarea>
+        </div>
+        <i class="layui-icon" close>×</i>
+    </div>
+    <div id="layui-layer6" class="layui-layer layui-layer-page layui-anim layui-anim-rl layui-layer-adminRight" style="z-index: 999; width: 300px; top: 58px; left: 100%;">
+        <div class="layui-layer-content">
+            <div class="layui-card-header">版本信息</div>
+            <div class="layui-card-body layui-text layadmin-about">
+                <p>当前版本：layuiAdmin-v1.0.0-beta6</p>
+                <p>基于框架：layui-v2.2.6-rc2</p>
+                <div class="layui-btn-container">
+                    <a href="javascript:;" class="layui-btn layui-btn-danger">获取授权</a>
+                    <a href="javascript:;" class="layui-btn">下载新版</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/checkall.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script>
+    
+    $(function(){
+        $(".kuang i").toggle(
+            function () {
+                $(this).addClass("dong");
+                $(this).parents().siblings("dl").addClass("yin");
+            },
+            function () {
+                $(this).removeClass("dong");
+                $(this).parents().siblings("dl").removeClass("yin");
+            }
+        );
+        
+        $(".table_box dd").on("click",function(){
+            $(this).parents().children().removeClass("change");
+            $(this).addClass("change");
+            $(this).parents("dl").removeClass("yin");
+            $(this).parents().siblings(".kuang").children("i").removeClass("dong");
+            $(this).parents().siblings(".kuang").children("input").value=$(this).innerHTML;
+            console.log($(this).html());
+        });
+        $(".yes div").toggle(
+            function () {
+                $(this).parents().addClass("no");
+                console.log($(this).children("em").html("无"));
+            },
+            function () {
+                $(this).parents().removeClass("no");
+                console.log($(this).children("em").html("有"));
+            }
+        );
+        $("#allCheck").checkBind($(".check"));
+
+        $("#menu_toggle").toggle(
+            function () {
+                $(".content").css({'width':'93%','left':'90px'});
+            },
+            function () {
+                $(".content").css({'width':'84%','left':'220px'});
+            }
+        );
+        
+    });
+</script>

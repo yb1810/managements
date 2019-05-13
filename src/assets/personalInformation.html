@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>layuiCms</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/layui.css">
+		<link rel="stylesheet" type="text/css" href="css/personalInformation.css"/>
+		
+	</head>
+	<body>
+		<div class="LAY_app">
+		    <div class="layui-header">
+		
+		    </div>
+		    <div class="col-md-3 layui-side layui-side-menu">
+		
+		    </div>
+			<div class="layui-body">
+				<div class="layui-fluid">
+					<div class="layui-con">
+						<p class="title">设置我的资料</p>
+						<div class="layui-card-body">
+							<div class="layui-form">
+								<div class="layui-form-item">
+									<p class="layui-form-label">我的角色</p>
+									<select class="text">
+										<option value ="1" selected>超级管理员</option>
+										<option value ="2" disabled>普通管理员</option>
+										<option value ="3" disabled>审核员</option>
+										<option value ="4" disabled>编辑人员</option>
+									</select>
+									<p>当前角色不可更改为其它角色</p>
+								</div>
+								<div class="layui-form-item">
+									<p class="layui-form-label">用户名</p>
+									<div class="text">dashen</div>
+									<p>不可修改。一般用于后台登入名</p>
+								</div>
+								<div class="layui-form-item">
+									<p class="layui-form-label">昵称</p>
+									<div class="text">大神</div>
+								</div>
+								<div class="layui-form-item">
+									<p class="layui-form-label">性别</p>
+									<div class="layui-input-block">
+										<div class="layui-unselect layui-form-radio layui-form-radioed">
+											<i class="layui-anim layui-icon layui-anim-scaleSpring"></i>
+											<div class="sex" style="display: inline-block;">男</div>
+										</div>
+										<div class="layui-form-radio">
+											<i class="layui-icon"></i>
+											<div class="sex" style="display: inline-block;">女</div>
+										</div>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<p class="layui-form-label">头像</p>
+									<input type="text" class="text layui-input" value="./content/avatar/168.jpg" />
+									<input type="file" class="file" name="上传图片" value="上传图片" />
+								</div>
+								<div class="layui-form-item">
+									<p class="layui-form-label">手机</p>
+									<input class="text" type="text" name="" id="" value="" />
+								</div>
+								<div class="layui-form-item">
+									<p class="layui-form-label">邮箱</p>
+									<input class="text" type="text" name="" id="" value="" />
+								</div>
+								<div class="layui-form-item">
+									<p class="layui-form-label">备注</p>
+									<textarea class="textarea">
+										
+									</textarea>
+								</div>
+								<div class="layui-form-item">
+									<p class="layui-form-label"></p>
+									<input class="submit" type="submit" value="确认修改" />
+									<input class="reset" type="reset" value="重新填写" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</body>
+</html>
